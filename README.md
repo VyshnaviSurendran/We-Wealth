@@ -7,10 +7,11 @@ accounts/wallets, transfers, savings goals, budgets, and recurring bills.
 
 ```
 backend/   FastAPI backend (see backend/README.md for setup)
+frontend/  Flutter app — Android + responsive web (see frontend/README.md for setup)
 docs/      Requirements, database design, and API specification notes
 ```
 
-## Quick start
+## Quick start — backend
 
 ```bash
 cd backend
@@ -23,4 +24,16 @@ uvicorn src.main:app --reload
 ```
 
 Then open http://localhost:8000/docs for interactive API docs.
+
+## Quick start — frontend
+
+```bash
+cd frontend
+flutter pub get
+flutter run -d chrome   # website
+# or: flutter run -d <device-id>   # Android
+```
+
+See `frontend/README.md` for how to point the app at a non-default backend
+URL.
 # We-Wealth
